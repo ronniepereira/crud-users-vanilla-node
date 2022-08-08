@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="./css/new-user-model.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <title>App - Usuários</title>
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="window modal">
+            <button class="btn-close-modal" onclick="toggleNewUserModal()">X</button>
+            <div class='title'>Criar usuário</div>
+            <form class="new-user" method="post" action="#">
+                <div class="input-fields">
+                    <input placeholder="Nome" type="text" id="name" name="name" class='input-line full-width'>
+                    <input placeholder="Email" type="email" id="email" name="email" class='input-line full-width'>
+                    <input placeholder="Senha" id="password" name="password" type="password"
+                        class='input-line full-width'>
+                    <div class="checkbox">
+                        <input id="admin" name="admin" type="checkbox" class='input-checkbox'>
+                        <label class="label-checkbox" for="admin">Acesso administrador</label>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-user-save ghost-round full-width" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main class="container">
+        <nav class="nav">
+            <button class="btn btn-logout" onclick="logout()">Logout</button>
+        </nav>
+        <div class="window">
+            <div class="content">
+                <div>
+                    <button class="btn btn-create-user" onclick="toggleNewUserModal()">Criar Usuário</button>
+                </div>
+                <div class="table">
+                    <table id="" class="">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Administrador</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

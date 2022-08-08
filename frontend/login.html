@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <title>App</title>
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='bold-line'></div>
+    <div class='container'>
+        <div class='window'>
+            <div class='overlay'></div>
+            <div class='content'>
+                <div class='welcome'>Olá!</div>
+                <div class='subtitle'>Faça o login para gerenciar os usuários.</div>
+                <div class='input-fields'>
+                    <input type='email' placeholder='Email' id="email" class='input-line full-width'>
+                    <input type='password' placeholder='Password' id="password" class='input-line full-width'>
+                </div>
+                <div><button id="login" class='ghost-round full-width'>Login</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
