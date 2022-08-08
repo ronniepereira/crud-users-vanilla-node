@@ -104,6 +104,5 @@ dist
 # TernJS port file
 .tern-port
 
-backend/src/credentials/private.pem
 
 private.pem
