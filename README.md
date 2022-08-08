@@ -56,10 +56,7 @@ $ cp .env.example .env
 # Modifique as variáveis do arquivo .env
 
 # Execute o migration para criar as tabelas no banco de dados
-$ npx prisma migrate
-
-# Execute o seed para popular o banco com usuário de admin padrão (dados abaixo)
-$ npx prisma db seed
+$ npx prisma migrate dev
 
 # Inicie a aplicação
 $ npm run start
